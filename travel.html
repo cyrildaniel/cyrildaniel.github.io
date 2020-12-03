@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyril's E-Portfolio | Travel</title>
+  <link rel="stylesheet" href="travel.css">
+</head>
+<body onload="loadJSON()">
+  <div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="favourites.html">Favourites</a>
+    <a href="culinary.html">Culinary</a>
+    <a class="active" href="travel.html">Travel</a>
+    <a href="comments.html">Comments</a>
+  </div>
+  <div class="container">
+    <h2>Travel</h2>
+    <div class="travel-content">
+      <div class="image">
+        <img src="travel.png" alt="Sticker for Travel" height="250px">
+      </div>
+      <div class="content">
+        <div id="demo"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function loadJSON(){
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+          processTravelJSON(xhttp);
+        }
+      };
+      xhttp.open("POST", "http://localhost/travel.json", true);
+      xhttp.send();
+    }
+
+    function processTravelJSON(xhttp){
+      var jsonText = xhttp.responseText;
+      var travelObj = JSON.parse(jsonText);
+      display(travelObj);
+    }
+
+    function display(travelObj){
+      var html = "<table>";
+      html += '<tr><th width="100px">COUNTRY</th><th width="250px">STATES</th><th width="300px">RECENT YEAR OF VISIT</th><th width="225px">MAP</th></tr>';
+      for(var i=0; i<travelObj.TRAVEL.length; i++){
+        html += "<tr>";
+        html += "<td>" + travelObj.TRAVEL[i].COUNTRY + "</td>";
+        html += "<td>" + travelObj.TRAVEL[i].STATES + "</td>";
+        html += "<td>" + travelObj.TRAVEL[i].RECENTYEAROFVISIT + "</td>";
+        html += "<td>" + "<img src=" + '"' + travelObj.TRAVEL[i].MAP + '">' + "</td>";
+        html += "</tr>";
+      }
+      html += "</table>";
+      var tableDiv = document.getElementById("demo");
+      tableDiv.innerHTML = html;
+    }
+  </script>
+</body>
+</html>
