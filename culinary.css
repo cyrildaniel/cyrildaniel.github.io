@@ -1,0 +1,70 @@
+.navbar {
+  overflow: hidden;
+  background-color: #ddd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: -5px;
+  border: 0;
+  border-radius: 0px;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: -2px;
+}
+
+.navbar a:hover {
+  background: #154360;
+  color: #f2f2f2;
+}
+
+a.active{
+  background: #154360;
+  color: #f2f2f2;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-image: url('bgimage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin:0;
+}
+
+.container{
+  margin-top: 50px;
+  color: #f2f2f2;
+}
+
+h2{
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.image, .content{
+  float: left;
+}
+
+.image{
+  margin-left: -10%;
+}
+
+.content{
+  margin-left: 9%;
+  margin-top: 3%;
+}
+
+.carousel-inner img{
+  border-radius: 8px;
+}
