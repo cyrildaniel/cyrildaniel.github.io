@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyril's E-Portfolio | Comments</title>
+  <link rel="stylesheet" href="comments.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="favourites.html">Favourites</a>
+    <a href="culinary.html">Culinary</a>
+    <a href="travel.html">Travel</a>
+    <a class="active" href="comments.html">Comments</a>
+  </div>
+  <div class="container">
+    <h2>Comments</h2>
+    <div class="comments-content">
+      <div class="image">
+        <img src="comments.png" alt="Sticker for Comments" height="250px">
+      </div>
+      <div class="content">
+        <h3>My Favourite Photo of the Week</h3>
+        <img src="favourite_image_of_the_week.jpg" alt="Favourite Photo of the Week" height="200" width="400">
+        <div class="form">
+          <form class="comments-form" onsubmit="return validateForm()">
+            <table border="0">
+              <tr class="attribute">
+                <td align="center" colspan="2"><label for="emailID">Email: </label></td>
+              </tr>
+              <tr>
+                <td align="center" colspan="2"><input type="text" name="email" id="emailID" size="30" maxlength="30" required></td>
+              </tr>
+              <tr class="attribute">
+                <td align="center" colspan="2"><label for="comments">Comments: </label><br></td>
+              </tr>
+              <tr>
+                <td colspan="2"><textarea name="comment" id="comments" rows="5" cols="51"></textarea></td>
+              </tr>
+              <tr class="attribute">
+                <td align="center">Rate the Photo:</td>
+                <td align="center">
+                  <input type="radio" name="rate" id="one" value="1" required>
+                  <label for="one">1</label>&nbsp;
+                  <input type="radio" name="rate" id="two" value="2">
+                  <label for="two">2</label>&nbsp;
+                  <input type="radio" name="rate" id="three" value="3">
+                  <label for="three">3</label>&nbsp;
+                  <input type="radio" name="rate" id="four" value="4">
+                  <label for="four">4</label>&nbsp;
+                  <input type="radio" name="rate" id="five" value="5">
+                  <label for="five">5</label>
+                </td>
+              </tr>
+              <tr class="attribute">
+                <td align="center" colspan="2"><input type="submit" value="Submit"></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  function validateForm() {
+    var email=document.getElementById("emailID").value;
+    //if(/^\w+@\w+(\.[a-z]{2,})*$/.test(email)==true)
+    if(/^(\w+\W*)+@(\w+\W*)+\.[a-z]{2,}$/.test(email)==true)
+        return true;
+    alert("Invalid Email ID, Enter using format word-characters@word-characters.domain");
+    return false;
+  }
+  </script>
+</body>
+</html>
