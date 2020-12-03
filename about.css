@@ -1,0 +1,203 @@
+.navbar {
+  overflow: hidden;
+  background-color: #ddd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 50px;
+}
+
+.navbar a:hover {
+  background: #154360;
+  color: #f2f2f2;
+}
+
+a.active{
+  background: #154360;
+  color: #f2f2f2;
+}
+
+body {
+  background-image: url('bgimage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin:0;
+}
+
+.container{
+  margin-top: 65px;
+  color: #f2f2f2;
+}
+
+h2{
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 30px;
+}
+
+.image, .content, .skills{
+  float:left;
+  margin-left: 2.5%;
+}
+
+.content{
+  width: 50%;
+}
+
+.personality-trait {
+  position: relative;
+  width: 50%;
+}
+
+.personality-trait-image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1A5276;
+  overflow: hidden;
+  width: 204.5%;
+  height: 0px;
+  transition: .5s ease;
+}
+
+.personality-trait-image-container:hover .overlay {
+  height: 71.5%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.skills{
+  width: 300px;
+}
+
+.skills ul{
+  list-style: none;
+}
+
+.bar {
+  background: #f2f2f2;
+  display: block;
+  height: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar span{
+  height: 5px;
+  float: left;
+  border-radius: 5px;
+  background: #33FFBB;
+}
+
+.c\+\+{
+  width: 95%;
+  animation: c\+\+ 3.5s;
+}
+
+.java{
+  width: 88%;
+  animation: java 3.5s;
+}
+
+.python{
+  width: 80%;
+  animation: python 3.5s;
+}
+
+.html{
+  width: 90%;
+  animation: html 3.5s;
+}
+
+.css{
+  width: 85%;
+  animation: css 3.5s;
+}
+
+.javascript{
+  width: 90%;
+  animation: javascript 3.5s;
+}
+
+@keyframes c\+\+ {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 95%;
+  }
+}
+
+@keyframes java {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 88%;
+  }
+}
+
+@keyframes python {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+
+@keyframes javascript {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
