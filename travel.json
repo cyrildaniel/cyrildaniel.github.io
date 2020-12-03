@@ -1,0 +1,52 @@
+{
+  "TRAVEL":[
+    {
+      "COUNTRY":"UAE",
+      "STATES":"DUBAI, ABU DHABI, SHARJAH, AJMAN, UMM AL QUWAIN, RAS AL KHAIMAH, FUJAIRAH",
+      "RECENTYEAROFVISIT":2020,
+      "MAP":"https://cdn.britannica.com/83/183783-050-E772BF84/World-Data-Locator-Map-United-Arab-Emirates.jpg"
+    }
+    ,
+    {
+      "COUNTRY":"INDIA",
+      "STATES":"KERALA, TAMIL NADU",
+      "RECENTYEAROFVISIT":2019,
+      "MAP":"https://cdn.britannica.com/65/183665-050-C8B71761/World-Data-Locator-Map-India.jpg"
+    }
+    ,
+    {
+      "COUNTRY":"HUNGARY",
+      "STATES":"BUDAPEST, DEBRECEN",
+      "RECENTYEAROFVISIT":2017,
+      "MAP":"https://cdn.britannica.com/63/183663-050-90312444/World-Data-Locator-Map-Hungary.jpg"
+    }
+    ,
+    {
+      "COUNTRY":"OMAN",
+      "STATES":"DHOFAR, MUSCAT",
+      "RECENTYEAROFVISIT":2014,
+      "MAP":"https://cdn.britannica.com/27/183727-050-4213A100/World-Data-Locator-Map-Oman.jpg"
+    }
+    ,
+    {
+      "COUNTRY":"USA",
+      "STATES":"FLORIDA, TEXAS, CALIFORNIA, GEORGIA",
+      "RECENTYEAROFVISIT":2012,
+      "MAP":"https://cdn.britannica.com/85/183785-050-77A0FDB5/The-United-States.jpg"
+    }
+    ,
+    {
+      "COUNTRY":"JORDAN",
+      "STATES":"AMMAN",
+      "RECENTYEAROFVISIT":2007,
+      "MAP":"https://cdn.britannica.com/76/183676-050-145F44D5/World-Data-Locator-Map-Jordan.jpg"
+    }
+    ,
+    {
+      "COUNTRY":"EGYPT",
+      "STATES":"CAIRO",
+      "RECENTYEAROFVISIT":2007,
+      "MAP":"https://cdn.britannica.com/33/183633-050-7CC58F2A/World-Data-Locator-Map-Egypt.jpg"
+    }
+  ]
+}
